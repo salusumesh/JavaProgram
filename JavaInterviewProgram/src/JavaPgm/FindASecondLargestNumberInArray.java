@@ -1,0 +1,26 @@
+package JavaPgm;
+
+public class FindASecondLargestNumberInArray {
+//19. How do you find the second largest number in an array in Java?
+	public static void main(String[] args) {
+		// There are many ways to solve this problem. You can sort the array in natural ascending order and take the second last value. However, sorting is an expensive operation. You can also use two variables to find the second largest value in a single iteration, as shown in the following example:
+		int[] array = { 1,  3, 4,2, 5 };
+		int secondLargest= findSecondHighest(array);
+		System.out.println( secondLargest);
+	}
+	private static int findSecondHighest(int[] array) {
+		 int highest = Integer.MIN_VALUE;
+		 int secondHighest = Integer.MIN_VALUE;
+
+		 for (int i : array) {
+		  if (i > highest) {
+		   secondHighest = highest;
+		   highest = i;
+		  } else if (i > secondHighest) {
+		   secondHighest = i;
+		  }
+
+		 }
+		 return secondHighest;
+		}
+}

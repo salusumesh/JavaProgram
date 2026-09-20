@@ -1,0 +1,10 @@
+package JavaPgm;
+
+public class Change_each_words_first_letter_to_upper_case {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

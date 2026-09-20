@@ -1,0 +1,17 @@
+package JavaPgm;
+
+public class SumOfAllElementInIntegerArray {
+//18  How do you get the sum of all elements in an integer array in Java?
+	public static void main(String[] args) {
+		// You can use a for loop to iterate over the array elements and add them to get the final sum:
+		int[] array = { 1, 2, 3, 4, 5 };
+
+		int sum = 0;
+
+		for (int i : array)
+		 sum += i;
+
+		System.out.println(sum);
+	}
+
+}

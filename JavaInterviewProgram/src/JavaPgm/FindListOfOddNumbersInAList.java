@@ -1,0 +1,33 @@
+package JavaPgm;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FindListOfOddNumbersInAList {
+	//6 How do you check if a list of integers contains only odd numbers in Java?
+	public static void main(String[] args) {
+		List<Integer> list1 = new ArrayList<>();
+		list1.add(1);
+		list1.add(21);
+		list1.add(31);
+		list1.add(41);
+		list1.add(51);
+		
+		System.out.println(onlyOddNumbers(list1));
+	}
+	
+	public static boolean onlyOddNumbers(List<Integer> list) {
+		 for (int i : list) {
+		  if (i % 2 == 0)
+		   return false;
+		 }
+
+		 return true;
+		}
+	
+	public static boolean onlyOddNumbersUsingParallelStream(List<Integer> list) {
+		 return list
+		   .parallelStream() // parallel stream for faster processing
+		   .anyMatch(x -> x % 2 != 0); // return as soon as any elements match the condition
+		}
+}

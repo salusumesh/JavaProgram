@@ -1,0 +1,10 @@
+package JavaPgm;
+
+public class sort_the_characters_in_the_given_String {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

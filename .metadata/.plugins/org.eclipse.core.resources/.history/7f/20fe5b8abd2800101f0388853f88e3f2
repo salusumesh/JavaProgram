@@ -1,0 +1,21 @@
+package JavaPgm;
+
+public class RemoveSpacesFromString {
+//How do you remove spaces from a string in Java?
+	public static void main(String[] args) {
+ 
+//The following example code shows one way to remove spaces from a string using with the Character.isWhitespace()
+	}
+	String removeWhiteSpaces(String input) {
+		 StringBuilder output = new StringBuilder();
+		 
+		 char[] charArray = input.toCharArray();
+		 
+		 for (char c : charArray) {
+		  if (!Character.isWhitespace(c))
+		   output.append(c);
+		 }
+		 
+		 return output.toString();
+		}
+}

@@ -1,0 +1,10 @@
+package JavaPgm;
+
+public class sort_numbers_in_ascending_order {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package JavaPgm;
+
+public class find_count_of_each_word_in_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

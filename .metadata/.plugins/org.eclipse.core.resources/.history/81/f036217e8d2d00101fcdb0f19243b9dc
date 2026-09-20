@@ -1,0 +1,10 @@
+package JavaPgm;
+
+public class Remove_character_duplicates_from_String {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
